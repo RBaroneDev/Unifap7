@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barone World</title> <!--nome site/icon-->
+    <link rel="shortcut icon" type="icon" href="https://cdn.discordapp.com/attachments/796200332107055105/1262554979802152980/logo.png?ex=66970574&is=6695b3f4&hm=2dab03fd2f1ea7c0a463cd959240d8a1964e0c2c72f352d5334965933fd929ec&"> <!--Icon Site-->
+    
+    <!--Codigo Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Fim Google Fontes-->
+
+</head>
+<body>
+  <h1>Extrair Primeiras Letras de Elementos de um Array</h1>
+  <h3>Exemplo: Maçã, Banana, Cereja]</h3>
+
+  <script>
+    // JavaScript para extrair as primeiras letras
+    let array = ["Maçã", "Banana", "Cereja"];
+
+    // Usando slice para obter a primeira letra de cada elemento
+    let primeirasLetras = array.map(elemento => elemento.slice(0, 1));
+
+    // Criando um parágrafo para exibir o resultado
+    let resultadoParagrafo = document.createElement('p');
+    resultadoParagrafo.textContent = "Primeiras letras: " + primeirasLetras.join(', ');
+
+    // Adicionando o parágrafo ao body do HTML
+    document.body.appendChild(resultadoParagrafo);
+  </script>
+
+  <style>
+    * {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    h3 {
+        color: red;
+
+    }
+  </style>
+</body>
+</html>
